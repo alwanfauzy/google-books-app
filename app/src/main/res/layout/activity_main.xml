@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_discover_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/discover_google_books"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_search_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_search"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="4dp"
+        android:hint="@string/search_here"
+        android:imeOptions="actionSearch"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="4dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_discover_main" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_books_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_search_main"
+        tools:listitem="@layout/item_book" />
+
+    <ProgressBar
+        android:id="@+id/loading_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rv_books_main"
+        app:layout_constraintTop_toTopOf="@+id/rv_books_main" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_empty_main"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:contentDescription="@string/empty_image"
+        android:src="@drawable/ic_empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_search_main"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_empty_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_result"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_empty_main"
+        app:layout_constraintStart_toStartOf="@+id/img_empty_main"
+        app:layout_constraintTop_toBottomOf="@+id/img_empty_main" />
+</androidx.constraintlayout.widget.ConstraintLayout>

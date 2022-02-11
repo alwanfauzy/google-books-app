@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Google Books App</string>
+    <string name="discover_google_books">Discover Google Books</string>
+    <string name="search_here">Search here</string>
+    <string name="book_title">Book Title</string>
+    <string name="authors_name">Authors Name</string>
+    <string name="published_date">Published Date</string>
+    <string name="categories">Categories</string>
+    <string name="image_book">Image Book</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="back">Back</string>
+    <string name="book_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor ligula ornare neque varius, ut auctor mi commodo. Proin quam diam, venenatis a eleifend molestie, iaculis porta quam. Aliquam vestibulum enim nec eros pretium, eget vehicula magna fringilla. Sed volutpat, enim quis lobortis laoreet, risus est hendrerit est, in tempus nunc nunc nec ipsum. Mauris arcu velit, blandit eu dictum sed, mattis sit amet libero. Quisque laoreet odio dolor, lobortis fermentum urna accumsan convallis. Vivamus sit amet mauris fringilla enim cursus molestie. Aenean tempor volutpat dui, sit amet rhoncus quam placerat non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam vehicula vehicula nibh, vel tempor tellus laoreet a.</string>
+    <string name="preview">Preview</string>
+    <string name="empty_image">Empty Image</string>
+    <string name="empty_result">Empty Result</string>
+</resources>
